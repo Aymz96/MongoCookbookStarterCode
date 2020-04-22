@@ -1,40 +1,60 @@
 # Mongo DB Cookbok :computer: :cd: :electric_plug:
 
-This cookbook install mongodb from source.
-It creates it's own apt package and then installs it.
-The recipe also create the config files and the service file with dynamic input of variables.
+This project consists of a mongodb Cookbook. The Cookbook installs mongodb from the source.
 
-## Installs
-- Mongodb
+### Prerequisites
+- In order to run the Mongodb Cookbook you must ensure you have the packages bellow:
 
-## Option and setting Variables
-
-Changes are made in the attribute file.
-Changing the port:
-
+```python
+- git
+- chef
+- Virtualbox
+- Vagrant
+- AWS CLI v2
 ```
-# attributes/default.rb
+### What is Chef?
 
-default['mongo']['port'] = <new_value_here>
+- A company released in 2009 which created a tool that goes after its name `Chef`. This tool was designed as a configuration management written in ruby.
+- Chef helps by managing the infrastructure of code to create an autonomous process. Chef has a client server architecture meaning it is able to support various platforms such as; Ubuntu, Windows, OS x, Solaris, etc.
+
+### Installation
+- In order to download this repository, open your terminal and `mkdir <filename>`, then `cd` into that new directory and run:
+
+```python
+git clone git@github.com:Aymz96/MongoCookbookStarterCode.git
 ```
 
+### Run Cookbook tests
+- In order to test the Mongodb Cookbook, you must first navigate into the Cookbook through the terminal, then execute the steps below:
 
-## Commands
-### test locally
+### Testing Cookbook
+- Once in the directory you will be testing both the ChefSpec and ChefInspec.
 
-Running my unit test:
-```
+**ChefSpec**
+run:
+```python
 chef exec rspec
 ```
+- This tests for what has been inputted within the default_spec.rb
+- This can be found within the `spec/unit` directory.
 
-running integration tests and closing machine:
+**ChefInspec**
+run:
+```python
+Kitchen test
 ```
-kitchen test
-```
+- This tests for what has been inputted within the default_test.rb
+- This can be found within  the `test/integration` directory.
 
-### test in AWS
+**ChefInspec (for the cloud)**
+run:
+```python
+KITCHEN_YAML=.kitchen_ec2.yml kitchen test
+```
+- This is used to run the ChefInspec inside a cloud service. In the case of this project an EC2 machine is being used to run the tests within. The file `kitchen_ec2.yml` has been configured to run using the EC2 instance.
 
-Running integration tests in AWS
-```
-KITCHEN_YAML=kitchen_cloud.yml kitchen test
-```
+### Success
+- Once you have run all the test as described above in the documentation. The test should all pass successfully as long as no new configurations have been done without the appropriate management.
+
+☆彡(ノ^ ^)ノ Congratulations ヘ(^ ^ヘ)☆彡
+:v::ok_hand:
