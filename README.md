@@ -1,16 +1,24 @@
 # Mongo DB Cookbok :computer: :cd: :electric_plug:
 
 This project consists of a mongodb Cookbook. The Cookbook installs mongodb from the source.
+- The purpose of the repository is to showcase the Installation of Mongodb using Chef, by provisioning packages, dependancies, templates and then testing the code for functionality in your local and Virtual environment.
 
 ### Prerequisites
 - In order to run the Mongodb Cookbook you must ensure you have the packages bellow:
 
-```python
-- git
-- chef
+```CSS
 - Virtualbox
 - Vagrant
 - AWS CLI v2
+- git
+- chef
+    Chef Workstation:
+      - ChefDK version: 4.7.73
+      - Chef Infra Client version: 15.7.32
+      - Chef InSpec version: 4.18.51
+      - Test Kitchen version: 2.3.4
+      - Foodcritic version: 16.2.0
+      - Cookstyle version: 5.20.0
 ```
 ### What is Chef?
 
