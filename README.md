@@ -25,17 +25,17 @@ This project consists of a Mongodb Cookbook. The Cookbook installs Mongodb from 
 - A company released in 2009 which created a tool that goes after its name `Chef`. This tool was designed as a configuration management written in ruby.
 - Chef helps by managing the infrastructure of code to create an autonomous process. Chef has a client server architecture meaning it is able to support various platforms such as; Ubuntu, Windows, OS x, Solaris, etc.
 
-### Installation
+### How to install Mongodb Dev-Env
 - To download this Mongodb Cookbook repository, open terminal and run the command below:
 
 ```python
 git clone git@github.com:Aymz96/MongoCookbookStarterCode.git
 ```
 
-### Run Mongodb Cookbook tests
+### How to Run Mongodb Dev-Env tests
 - To test the Mongodb Cookbook, navigate into the Cookbook through the terminal, then execute the steps below:
 
-### Testing Cookbook
+### How to test Mongodb Dev-Env
 - Once in the directory you will be testing both the ChefSpec and ChefInspec.
 
 **ChefSpec**
