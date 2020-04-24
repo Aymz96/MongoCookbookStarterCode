@@ -32,7 +32,7 @@ This project consists of a Mongodb Cookbook. The Cookbook installs Mongodb from 
 git clone git@github.com:Aymz96/MongoCookbookStarterCode.git
 ```
 
-### How to Run Mongodb Dev-Env tests
+### Run Mongodb Dev-Env tests
 - To run the Mongodb Cookbook, navigate into  MongoCookbookStarterCode through the terminal, then follow the next steps.
 
 ### Test Mongodb Dev-Env
