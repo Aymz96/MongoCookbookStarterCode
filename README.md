@@ -33,7 +33,7 @@ git clone git@github.com:Aymz96/MongoCookbookStarterCode.git
 ```
 
 ### How to Run Mongodb Dev-Env tests
-- To test the Mongodb Cookbook, navigate into the Cookbook through the terminal, then execute the steps below:
+- To run the Mongodb Cookbook, navigate into  MongoCookbookStarterCode through the terminal, then follow the next steps.
 
 ### How to test Mongodb Dev-Env
 - Once in the directory you will be testing both the ChefSpec and ChefInspec.
@@ -52,7 +52,7 @@ run:
 Kitchen test
 ```
 - This tests for what has been inputted within the default_test.rb
-- This can be found within  the `test/integration` directory.
+- This can be found within  the `/test/integration` directory.
 
 **ChefInspec (for the cloud)**
 run:
